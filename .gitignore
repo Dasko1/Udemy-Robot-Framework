@@ -1,1 +1,4 @@
 *.tmp
+*.html
+*.xml
+*.log
