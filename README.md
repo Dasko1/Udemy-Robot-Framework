@@ -13,9 +13,15 @@ robot -d C:\Users\dadaskalopoulos\Udemy-Robot-Framework\crm\Tests -i smoke Tests
 The lower two results are for running tests that specify tags!
 
 ### Run Multiple Test Suites
-robot -d results Tests								Write just the directory without declaring any specific test!
-robot -d results -N "Full Regression" Tests			This will title the Report to "Full Regression"!
+#### Write just the directory without declaring any specific test!
+robot -d results Tests	
+
+#### This will title the Report to "Full Regression"!
+robot -d results -N "Full Regression" Tests			
 
 ### Run Single Tests
-robot -d results -t "Should be able to add new customer" Tests/Crm.robot	This is an example if Crm.robot had more than one test 
-robot -N "Single Test Case" -d results -i CurrentTestCase tests				This will run the test with the tag CurrentTestTag
+#### This is an example if test suite Crm.robot had more than one test
+robot -d results -t "Should be able to add new customer" Tests/Crm.robot
+
+#### This will run the test with the tag CurrentTestTag
+robot -N "Single Test Case" -d results -i CurrentTestCase tests				
