@@ -1,12 +1,14 @@
 *** Settings ***
 Library             SeleniumLibrary
+Resource            ../../Tests/AmazonApp.robot
 
 *** Variables ***
 
 *** Keywords ***
 Load
-    Go To    https://www.amazon.com
-    Sleep           12s
+    Go To           ${START_URL}
+    # Sleep           20s
+    Click Button    class:a-button-text
 
 Verify Page Loaded
     Wait Until Page Contains    Handmade

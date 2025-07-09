@@ -2,16 +2,19 @@
 Documentation       This is some basic info about the whole suite
 Resource            ../Resources/Amazon.robot
 Resource            ../Resources/Common.robot
-Suite Setup         Insert Testing Data
-Test Setup          Begin Web Test
-Test Teardown       End Web Test
-Suite Teardown      Cleanup Testing Data
+# Suite Setup         Insert Testing Data
+Test Setup          Common.Begin Web Test
+Test Teardown       Common.End Web Test
+# Suite Teardown      Cleanup Testing Data
 
 *** Variables ***
+${BROWSER} =        chrome
+${START_URL} =      https://www.amazon.com
+${SEARCH_TERM} =    Bburago
 
 *** Test Cases ***
 User can search for products
-    [Documentation]  This is some basic info about the test
+  [Documentation]  This is some basic info about the test
     [Tags]  Smoke
     Amazon.Search for Products
 

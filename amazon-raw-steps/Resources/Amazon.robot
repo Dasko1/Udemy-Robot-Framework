@@ -23,4 +23,4 @@ Add Product to Cart
 
 Begin Checkout
     Cart.Verify Product Added
-    Cart.Proceed to Checkout
+    # Cart.Proceed to Checkout
