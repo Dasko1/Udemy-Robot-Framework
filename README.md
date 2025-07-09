@@ -1,6 +1,9 @@
 # Udemy-Robot-Framework
 This is from the Udemy Robot Framework Tutorial
 
+## IMPORTANT
+Go to amazon-raw-steps and imitate the file structure: see the AmazonApp.robot Test Suite & its cases, the how the Keyword files call the Page Object (PO) files!
+
 ## Keywords
 Use the keywords in a test case just like the steps in a manual test! Generally, you can use the SeleniumLibrary keywords, but sometimes you need to create your own keywords that will be in a Resource file that you call in the Settings section!
 
